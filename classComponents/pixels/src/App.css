@@ -3,11 +3,10 @@
 }
 
 .pixel{
-  height: 50px;
-  width: 50px;
-  border: 2px solid black;
+  height: 25px;
+  width: 25px;
+  border: 1px solid black;
   display: inline-block;
-  margin: 2px;
 }
 
 .unfilled{

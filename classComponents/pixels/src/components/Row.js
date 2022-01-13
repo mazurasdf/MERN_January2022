@@ -15,6 +15,16 @@ class Row extends Component{
                 <Pixel />
                 <Pixel />
                 <Pixel />
+                <Pixel />
+                <Pixel />
+                <Pixel />
+                <Pixel />
+                <Pixel />
+                <Pixel />
+                <Pixel />
+                <Pixel />
+                <Pixel />
+                <Pixel />
             </div>
         )
     }

@@ -21,6 +21,16 @@ function App() {
       <Row />
       <Row />
       <Row />
+      <Row />
+      <Row />
+      <Row />
+      <Row />
+      <Row />
+      <Row />
+      <Row />
+      <Row />
+      <Row />
+      <Row />
     </div>
   );
 }
