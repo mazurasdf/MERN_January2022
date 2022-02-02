@@ -2,34 +2,25 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
 import { useState } from 'react';
-import WordGuess from './components/WordGuess';
+import SubmittedGuess from './components/SubmittedGuess';
+import InputGuess from './components/InputGuess';
 
 function App() {
   const answer = "tears";
-  const [wordGuess, setWordGuess] = useState("");
-  const [submittedGuess, setSubmittedGuess] = useState("");
+  const [submittedGuesses, setSubmittedGuesses] = useState([]);
 
-  const onSubmitHandler = (event) => {
-    event.preventDefault();
-    
-    // axios.get("https://api.dictionaryapi.dev/api/v2/entries/en/" + wordGuess)
-    //   .then(res => {
-    //     console.log("real word");
-
-    //   })
-    //   .catch(err => console.log("not real word"))
-    setSubmittedGuess(wordGuess);
-  }
+  
 
   return (
     <div className="App">
       <h1>hey it's me!</h1>
-      <form onSubmit={onSubmitHandler}>
-        <input type="text" onChange={(event)=>setWordGuess(event.target.value)} maxLength={5} minLength={5}/>
-        <input type="submit" value="check word"/>
-      </form>
+      <InputGuess setSubmittedGuesses={setSubmittedGuesses}/>
 
-      <WordGuess guess={submittedGuess} answer={answer}/>
+      {
+        submittedGuesses.map((guess,i)=>
+          <SubmittedGuess guess={guess} answer={answer}/>
+        )
+      }
     </div>
   );
 }

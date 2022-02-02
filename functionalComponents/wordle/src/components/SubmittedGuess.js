@@ -1,6 +1,6 @@
 import React from 'react';
 
-const WordGuess = (props) => {
+const SubmittedGuess = (props) => {
     return(
         <div>
             {
@@ -18,4 +18,4 @@ const WordGuess = (props) => {
     )
 }
 
-export default WordGuess;
+export default SubmittedGuess;
