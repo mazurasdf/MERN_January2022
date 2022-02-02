@@ -58,3 +58,9 @@
 .sortaCorrect{
   background-color: rgb(184, 165, 2);
 }
+
+.inputSquare{
+  height:50px;
+  width: 50px;
+  background-color: rgb(73, 73, 73);
+}
